@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5qu8qohuf6r7"]
+
+[ext_resource type="PackedScene" uid="uid://xmt3jd37idfa" path="res://personajes/personajes.tscn" id="1_v5dkr"]
+[ext_resource type="Script" path="res://personajes/enemigoGhost/enemigo_ghost.gd" id="2_6ocj2"]
+[ext_resource type="Texture2D" uid="uid://dp8dqgnpxssc5" path="res://PinkmanData/Enemies/Ghost/Idle (44x30).png" id="3_jlm7b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74k5v"]
+size = Vector2(26, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lidcn"]
+size = Vector2(32, 33)
+
+[node name="enemigoGhost" groups=["enemigos"] instance=ExtResource("1_v5dkr")]
+position = Vector2(216, 120)
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("2_6ocj2")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_jlm7b")
+hframes = 10
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("RectangleShape2D_74k5v")
+
+[node name="RayCasts" type="Node2D" parent="." index="3"]
+
+[node name="RayCastsuelo" type="RayCast2D" parent="RayCasts" index="0"]
+target_position = Vector2(0, 20)
+collision_mask = 4
+
+[node name="RayCastmuro" type="RayCast2D" parent="RayCasts" index="1"]
+target_position = Vector2(-20, 0)
+collision_mask = 4
+
+[node name="rayTimer" type="Timer" parent="RayCasts" index="2"]
+one_shot = true
+
+[node name="raycastPlayertDetector" type="RayCast2D" parent="." index="4"]
+target_position = Vector2(-50, 0)
+
+[node name="dmgPlayer" type="Area2D" parent="." index="5"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dmgPlayer" index="0" groups=["enemigos"]]
+shape = SubResource("RectangleShape2D_lidcn")
+
+[connection signal="timeout" from="RayCasts/rayTimer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="dmgPlayer" to="." method="_on_dmg_player_body_entered"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dknwbjh6v3a7c"]
+
+[ext_resource type="Script" path="res://fin_de_nivel.gd" id="1_t4u62"]
+[ext_resource type="Texture2D" uid="uid://di1m7shyd3pjf" path="res://PinkmanData/Items/Checkpoints/End/End (Idle).png" id="2_8wvo6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rli17"]
+size = Vector2(42, 45)
+
+[node name="finDeNivel" type="Area2D"]
+script = ExtResource("1_t4u62")
+siguienteNivel = "<null>"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8wvo6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 9.5)
+shape = SubResource("RectangleShape2D_rli17")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

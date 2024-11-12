@@ -1,0 +1,141 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731402516
+Camera2D.gd::GDScript::-1::1727564630::0::1::::<>Camera2D<>::
+enemy.tscn::PackedScene::7091803952525133586::1726555713::0::1::::<><>::res://Player.gd<>uid://bvkajrdp7d7s7::::res://PinkmanData/Main Characters/Pink Man.png<>res://Camera2D.gd<>uid://dnahddj5leahh::::res://GUItext.tres
+fin_de_nivel.gd::GDScript::-1::1727559384::0::1::::<>Area2D<>::
+fin_de_nivel.tscn::PackedScene::7889325442858616210::1731397926::0::1::::<><>::res://fin_de_nivel.gd<>uid://di1m7shyd3pjf::::res://PinkmanData/Items/Checkpoints/End/End (Idle).png
+Global.gd::GDScript::-1::1727249405::0::1::::<>Node<>::
+global.tscn::PackedScene::4305499610267572003::1726555713::0::1::::<><>::res://Global.gd<>uid://di2p4xwb1340l::::res://PinkmanData/Sounds/confirmation_002.ogg
+menu.gd::GDScript::-1::1726305451::0::1::::<>Control<>::
+menu.tscn::PackedScene::8533164955249858795::1731402256::0::1::::<><>::res://menu.gd<>uid://bhc3jpehmycg2::::res://Imágenes/Fondo_hda_4.webp<>uid://6kevsfysjxx2::::res://PinkmanData/Fonts/NokiaCellphoneFC.ttf
+options.gd::GDScript::-1::1726305451::0::1::::<>Control<>::
+options.tscn::PackedScene::4237095658735472926::1726555714::0::1::::<><>::res://options.gd<>uid://bhc3jpehmycg2::::res://Imágenes/Fondo_hda_4.webp
+personaje.gd::GDScript::-1::1727343535::0::1::::personajes<>CharacterBody2D<>::
+Player.gd::GDScript::-1::1727579191::0::1::::Player<>CharacterBody2D<>::
+Player.tscn::PackedScene::7091803952525133586::1731397925::0::1::::<><>::res://Player.gd<>uid://bvkajrdp7d7s7::::res://PinkmanData/Main Characters/Pink Man.png<>res://Camera2D.gd<>uid://dnahddj5leahh::::res://GUItext.tres<>uid://by5xo3sa5jg4t::::res://personajes/enemigoGhost/HPGui.tres<>uid://ba2hxqf376lg::::res://PinkmanData/Sounds/Jump.ogg<>uid://bk01bmd5p2v58::::res://PinkmanData/Sounds/Hit.ogg
+world.tscn::PackedScene::3774530946778200824::1731397926::0::1::::<><>::uid://c8bk8fck636hy::::res://Player.tscn<>uid://cbmb5cipyhb2u::::res://PinkmanData/Terrain/Terrain (16x16).png<>uid://cx1qsqa4qwsus::::res://PinkmanData/Parallax/parallax-00.png<>uid://d02l7nnnfajd3::::res://PinkmanData/Parallax/parallax-01.png<>uid://cqgs3aseyvj8m::::res://PinkmanData/Parallax/parallax-02.png<>uid://cvngflsps17db::::res://PinkmanData/Parallax/parallax-03.png<>uid://owlwdggvbxt3::::res://PinkmanData/Parallax/parallax-04.png<>uid://dbhf1f1dvxd1t::::res://coleccionables/fruta.tscn<>uid://dknwbjh6v3a7c::::res://fin_de_nivel.tscn<>uid://b5qu8qohuf6r7::::res://personajes/enemigoGhost/enemigo_ghost.tscn<>uid://ck2altpofe1mu::::res://PinkmanData/Sounds/level-vii-short-258782.mp3
+world_2.tscn::PackedScene::2662764164869890675::1731397927::0::1::::<><>::uid://cbmb5cipyhb2u::::res://PinkmanData/Terrain/Terrain (16x16).png<>uid://c8bk8fck636hy::::res://Player.tscn<>uid://i3ub854obb06::::res://Imágenes/1.png<>uid://dknwbjh6v3a7c::::res://fin_de_nivel.tscn<>uid://cyu7rnic4fhm4::::res://Imágenes/2.png<>uid://cny6ouh48euwn::::res://Imágenes/3.png<>uid://bks8v40xs1bb6::::res://Imágenes/5.png<>uid://dbhf1f1dvxd1t::::res://coleccionables/fruta.tscn<>uid://c0y2fpxkmd0q5::::res://personajes/enemigo_cerdito.tscn<>uid://c6efmynu3ik3m::::res://personajes/MovingPlatform/platform.tscn<>uid://5qumiemvo0if::::res://personajes/MovingPlatform/fall_damage.tscn<>uid://cewv1junme6uu::::res://PinkmanData/Sounds/puzzle-game-bright-casual-video-game-music-249202.mp3<>uid://b7ulpnpbw4u2f::::res://PinkmanData/Traps/Spikes/Idle.png
+::res://coleccionables/::1726555713
+fruta.gd::GDScript::-1::1725096777::0::1::::<>Area2D<>::
+fruta.tscn::PackedScene::7244251857548056827::1726555713::0::1::::<><>::res://coleccionables/fruta.gd<>uid://c4ig61vbhtiah::::res://PinkmanData/Items/Fruits/Melon.png
+::res://Imágenes/::1731402359
+1.png::CompressedTexture2D::620531232818231549::1731142782::1731402250::1::::<><>::
+2.png::CompressedTexture2D::6500635167336901769::1731142782::1731402251::1::::<><>::
+3.png::CompressedTexture2D::5736749691311027929::1731142782::1731402251::1::::<><>::
+5.png::CompressedTexture2D::3127510644947153493::1731142782::1731402251::1::::<><>::
+background.png::CompressedTexture2D::1648790030135397469::1731141421::1731402251::1::::<><>::
+fantasy-wide-scifi-martian-background-260nw-761901715.webp::CompressedTexture2D::5060560517134145641::1731058677::1731402250::1::::<><>::
+Fondo_hda_4.webp::CompressedTexture2D::2883588286974552015::1726303348::1731402250::1::::<><>::
+Imagen de WhatsApp 2024-07-04 a las 19.23.17_8e3393e2.jpg::CompressedTexture2D::68656345235104829::1725003518::1731402250::1::::<><>::
+logo.jpg::CompressedTexture2D::7922456162043192775::1725003679::1731402250::1::::<><>::
+::res://Imágenes/bug/::1731402250
+Captura de pantalla 2024-04-25 194526.png::CompressedTexture2D::2602771052949997352::1714117565::1731402250::1::::<><>::
+Captura de pantalla 2024-04-25 204320.png::CompressedTexture2D::4961683881652320717::1714121020::1731402250::1::::<><>::
+::res://Imágenes/Camera Roll/::1726303534
+::res://Imágenes/Saved Pictures/::1726303534
+::res://Imágenes/Screenshots/::1731402250
+Captura de pantalla 2024-04-25 194442.png::CompressedTexture2D::563866240302228415::1714117482::1731402250::1::::<><>::
+Captura de pantalla 2024-04-25 194526.png::CompressedTexture2D::8711270837737977888::1714117527::1731402250::1::::<><>::
+Captura de pantalla 2024-04-25 204320.png::CompressedTexture2D::3410506215858181465::1714121000::1731402250::1::::<><>::
+Captura de pantalla 2024-08-29 183412.png::CompressedTexture2D::4195463326699352906::1724999652::1731402250::1::::<><>::
+Captura de pantalla 2024-08-29 183434.png::CompressedTexture2D::8533577804915953256::1724999675::1731402250::1::::<><>::
+::res://personajes/::1731397926
+enemigo_cerdito.gd::GDScript::-1::1731297329::0::1::::<>personajes<>::
+enemigo_cerdito.tscn::PackedScene::6578756636059956730::1731397926::0::1::::<><>::uid://xmt3jd37idfa::::res://personajes/personajes.tscn<>res://personajes/enemigo_cerdito.gd<>uid://qh4778c8molj::::res://PinkmanData/Enemies/AngryPig/angryPig.png
+personajes.tscn::PackedScene::1640320040475199286::1731397925::0::1::::<><>::res://personaje.gd
+::res://personajes/enemigoGhost/::1731397925
+enemigo_ghost.gd::GDScript::-1::1731058445::0::1::::<>personajes<>::
+enemigo_ghost.tscn::PackedScene::4526390170299091622::1731397925::0::1::::<><>::uid://xmt3jd37idfa::::res://personajes/personajes.tscn<>res://personajes/enemigoGhost/enemigo_ghost.gd<>uid://dp8dqgnpxssc5::::res://PinkmanData/Enemies/Ghost/Idle (44x30).png
+HPGui.tres::StyleBoxFlat::4134307254076704045::1731058445::0::1::::<><>::
+::res://personajes/MovingPlatform/::1731397927
+fall_damage.gd::GDScript::-1::1731313893::0::1::::<>Area2D<>::
+fall_damage.tscn::PackedScene::2139931549528002361::1731397927::0::1::::<><>::res://personajes/MovingPlatform/fall_damage.gd
+platform.gd::GDScript::-1::1731313451::0::1::::<>Path2D<>::
+platform.tscn::PackedScene::6957279327261449900::1731397927::0::1::::<><>::res://personajes/MovingPlatform/platform.gd<>uid://i6s3gmq6sfr4::::res://PinkmanData/Traps/Platforms/Brown Off.png
+::res://PinkmanData/::1731401390
+::res://PinkmanData/Background/::1731402250
+Blue.png::CompressedTexture2D::8428730037318070669::1717232669::1731402249::1::::<><>::
+Brown.png::CompressedTexture2D::699767688020570483::1717232669::1731402249::1::::<><>::
+Gray.png::CompressedTexture2D::7414892749779024325::1717232669::1731402249::1::::<><>::
+Green.png::CompressedTexture2D::8230616039892213089::1717232669::1731402249::1::::<><>::
+Pink.png::CompressedTexture2D::3501941878592028371::1717232669::1731402250::1::::<><>::
+Purple.png::CompressedTexture2D::3671035191154201404::1717232669::1731402250::1::::<><>::
+Yellow.png::CompressedTexture2D::4231249794681308855::1717232669::1731402250::1::::<><>::
+::res://PinkmanData/Enemies/::1731310516
+::res://PinkmanData/Enemies/AngryPig/::1731402250
+angryPig.png::CompressedTexture2D::1139291812543329191::1717232669::1731402250::1::::<><>::
+Hit 1 (36x30).png::CompressedTexture2D::3540655313888129976::1717232669::1731402250::1::::<><>::
+Hit 2 (36x30).png::CompressedTexture2D::4817760041080457366::1717232669::1731402250::1::::<><>::
+Idle (36x30).png::CompressedTexture2D::298505098302015499::1717232669::1731402250::1::::<><>::
+Run (36x30).png::CompressedTexture2D::3342857699971466211::1717232669::1731402250::1::::<><>::
+Walk (36x30).png::CompressedTexture2D::6055468787696935154::1717232669::1731402250::1::::<><>::
+::res://PinkmanData/Enemies/Ghost/::1731402250
+Appear (44x30).png::CompressedTexture2D::1018302725053833444::1717232670::1731402250::1::::<><>::
+Desappear (44x30).png::CompressedTexture2D::2724555359884137405::1717232670::1731402250::1::::<><>::
+Gost Particles (48x16).png::CompressedTexture2D::7397173194822937440::1717232670::1731402250::1::::<><>::
+Hit (44x30).png::CompressedTexture2D::1216372006124447701::1717232670::1731402250::1::::<><>::
+Idle (44x30).png::CompressedTexture2D::8280430231150093002::1717232670::1731402250::1::::<><>::
+::res://PinkmanData/Enemies/Trunk/::1731402250
+Attack (64x32).png::CompressedTexture2D::601061303103332475::1717232670::1731402250::1::::<><>::
+Bullet Pieces.png::CompressedTexture2D::579172338046331237::1717232670::1731402250::1::::<><>::
+Bullet.png::CompressedTexture2D::457191973983126031::1717232670::1731402250::1::::<><>::
+Hit (64x32).png::CompressedTexture2D::2477033373628850436::1717232670::1731402250::1::::<><>::
+Idle (64x32).png::CompressedTexture2D::7126432709920698957::1717232670::1731402250::1::::<><>::
+Run (64x32).png::CompressedTexture2D::548302602304352976::1717232670::1731402250::1::::<><>::
+::res://PinkmanData/Fonts/::1731402249
+COMICATE.TTF::FontFile::20600787208782802::1717232670::1731402249::1::::<><>::
+NokiaCellphoneFC.ttf::FontFile::2196779254221880365::1717232670::1731402249::1::::<><>::
+::res://PinkmanData/Items/::1731144974
+::res://PinkmanData/Items/Checkpoints/::1717232670
+::res://PinkmanData/Items/Checkpoints/Checkpoint/::1731402250
+Checkpoint (Flag Idle)(64x64).png::CompressedTexture2D::5228853178658094854::1717232670::1731402250::1::::<><>::
+Checkpoint (Flag Out) (64x64).png::CompressedTexture2D::1708968553772466918::1717232670::1731402249::1::::<><>::
+Checkpoint (No Flag).png::CompressedTexture2D::4166994762854588567::1717232670::1731402249::1::::<><>::
+::res://PinkmanData/Items/Checkpoints/End/::1731402249
+End (Idle).png::CompressedTexture2D::7775233328436781507::1717232670::1731402249::1::::<><>::
+End (Pressed) (64x64).png::CompressedTexture2D::5476408146217412436::1717232670::1731402249::1::::<><>::
+::res://PinkmanData/Items/Checkpoints/Start/::1731402249
+Start (Idle).png::CompressedTexture2D::6176332543844405122::1717232670::1731402249::1::::<><>::
+Start (Moving) (64x64).png::CompressedTexture2D::5549098515984340123::1717232670::1731402249::1::::<><>::
+::res://PinkmanData/Items/Fruits/::1731402249
+Apple.png::CompressedTexture2D::4647489464377387884::1717232670::1731402249::1::::<><>::
+Bananas.png::CompressedTexture2D::1845396528253102445::1717232670::1731402249::1::::<><>::
+Cherries.png::CompressedTexture2D::4151808584668178524::1717232670::1731402249::1::::<><>::
+CherryIcon.png::CompressedTexture2D::64088867495084371::1717232670::1731402249::1::::<><>::
+Collected.png::CompressedTexture2D::6554237102391864391::1717232670::1731402249::1::::<><>::
+Kiwi.png::CompressedTexture2D::5659625159733050810::1717232670::1731402249::1::::<><>::
+Melon.png::CompressedTexture2D::6825253914592812303::1717232670::1731402249::1::::<><>::
+Orange.png::CompressedTexture2D::6718722301303521521::1717232670::1731402249::1::::<><>::
+Pineapple.png::CompressedTexture2D::2440468474396026492::1717232670::1731402249::1::::<><>::
+Strawberry.png::CompressedTexture2D::438126892709343686::1717232670::1731402249::1::::<><>::
+::res://PinkmanData/Main Characters/::1731402249
+Pink Man.png::CompressedTexture2D::3881047148033338300::1717232670::1731402249::1::::<><>::
+Pink.png::CompressedTexture2D::731736946643816428::1717232670::1731402249::1::::<><>::
+::res://PinkmanData/Parallax/::1731402250
+ladder.png::CompressedTexture2D::4497288076013989176::1717232671::1731402249::1::::<><>::
+lava.png::CompressedTexture2D::4399405542016579272::1717232671::1731402249::1::::<><>::
+parallax-00.png::CompressedTexture2D::6441863050554549842::1717232671::1731402249::1::::<><>::
+parallax-01.png::CompressedTexture2D::8970447077198476502::1717232671::1731402250::1::::<><>::
+parallax-02.png::CompressedTexture2D::5909392068239342522::1717232671::1731402250::1::::<><>::
+parallax-03.png::CompressedTexture2D::6274017831783758007::1717232671::1731402250::1::::<><>::
+parallax-04.png::CompressedTexture2D::1028767463047726358::1717232671::1731402250::1::::<><>::
+sign.png::CompressedTexture2D::2401031414399325588::1717232671::1731402249::1::::<><>::
+water_8frames.png::CompressedTexture2D::4639960948784647021::1717232671::1731402249::1::::<><>::
+::res://PinkmanData/Sounds/::1731402249
+confirmation_002.ogg::AudioStreamOggVorbis::7777474784561980657::1717232671::1731402249::1::::<><>::
+Hit.ogg::AudioStreamOggVorbis::3141499627829561529::1717232671::1731402249::1::::<><>::
+Jump.ogg::AudioStreamOggVorbis::71841936019873624::1717232671::1731402249::1::::<><>::
+level-vii-short-258782.mp3::AudioStreamMP3::5530488668617778052::1731395520::1731402249::1::::<><>::
+puzzle-game-bright-casual-video-game-music-249202.mp3::AudioStreamMP3::5100335044230399672::1731395073::1731402249::1::::<><>::
+video-game-boss-fiight-259885.mp3::AudioStreamMP3::8983636984523512087::1731395490::1731402249::1::::<><>::
+::res://PinkmanData/Terrain/::1731402249
+Terrain (16x16).png::CompressedTexture2D::4867917153001881414::1717232671::1731402249::1::::<><>::
+::res://PinkmanData/Traps/::1731401464
+::res://PinkmanData/Traps/Platforms/::1731402249
+Brown Off.png::CompressedTexture2D::626649702026106483::1717232671::1731402249::1::::<><>::
+Brown On (32x8).png::CompressedTexture2D::3296922970088920528::1717232671::1731402249::1::::<><>::
+Chain.png::CompressedTexture2D::2405597112315309266::1717232671::1731402249::1::::<><>::
+Grey Off.png::CompressedTexture2D::2442708935784560532::1717232671::1731402249::1::::<><>::
+Grey On (32x8).png::CompressedTexture2D::6297310381202211818::1717232671::1731402249::1::::<><>::
+::res://PinkmanData/Traps/Spikes/::1731402249
+Idle.png::CompressedTexture2D::4674446615071954195::1717232671::1731402249::1::::<><>::

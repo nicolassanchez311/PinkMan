@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=3 uid="uid://dttr8k86sh8ot"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_0ofgp"]
+[ext_resource type="Texture2D" uid="uid://bhc3jpehmycg2" path="res://Imágenes/Fondo_hda_4.webp" id="1_4ns1o"]
+[ext_resource type="FontFile" uid="uid://6kevsfysjxx2" path="res://PinkmanData/Fonts/NokiaCellphoneFC.ttf" id="3_po1nh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sxn3l"]
+line_spacing = 5.0
+font = ExtResource("3_po1nh")
+font_size = 40
+font_color = Color(0.911688, 0.233609, 0.52554, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p4bva"]
+bg_color = Color(0.940536, 0.623069, 0.759389, 0.737255)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oc76w"]
+bg_color = Color(0.940536, 0.623069, 0.759389, 0.737255)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_syui7"]
+bg_color = Color(0.941176, 0.623529, 0.760784, 0.737255)
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0ofgp")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.408329, 0.408329, 0.408329, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_4ns1o")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 316.0
+offset_bottom = 82.0
+text = "PINKMAN"
+label_settings = SubResource("LabelSettings_sxn3l")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -24.0
+offset_right = 40.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 7
+
+[node name="play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_po1nh")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_p4bva")
+text = "JUGAR"
+
+[node name="options" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_po1nh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oc76w")
+text = "OPCIONES"
+
+[node name="quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_po1nh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_syui7")
+text = "SALIR"
+
+[connection signal="pressed" from="VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

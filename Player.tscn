@@ -1,0 +1,220 @@
+[gd_scene load_steps=18 format=3 uid="uid://c8bk8fck636hy"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_lwe6s"]
+[ext_resource type="Texture2D" uid="uid://bvkajrdp7d7s7" path="res://PinkmanData/Main Characters/Pink Man.png" id="1_y86qb"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="3_7mydb"]
+[ext_resource type="LabelSettings" uid="uid://dnahddj5leahh" path="res://GUItext.tres" id="4_lv6d6"]
+[ext_resource type="StyleBox" uid="uid://by5xo3sa5jg4t" path="res://personajes/enemigoGhost/HPGui.tres" id="5_2o8n6"]
+[ext_resource type="AudioStream" uid="uid://ba2hxqf376lg" path="res://PinkmanData/Sounds/Jump.ogg" id="6_nxdym"]
+[ext_resource type="AudioStream" uid="uid://bk01bmd5p2v58" path="res://PinkmanData/Sounds/Hit.ogg" id="7_n57hb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hy108"]
+size = Vector2(19, 18.4961)
+
+[sub_resource type="Animation" id="Animation_21xuk"]
+length = 0.001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_iu1ov"]
+resource_name = "adle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_pnxud"]
+resource_name = "fall"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [24]
+}
+
+[sub_resource type="Animation" id="Animation_bwpem"]
+resource_name = "herido"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39, 40, 41, 42]
+}
+
+[sub_resource type="Animation" id="Animation_k2f26"]
+resource_name = "jump"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [23]
+}
+
+[sub_resource type="Animation" id="Animation_lfof0"]
+resource_name = "walk"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [9, 11, 12, 13, 14, 15, 16, 17, 18]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j2dnk"]
+_data = {
+"RESET": SubResource("Animation_21xuk"),
+"adle": SubResource("Animation_iu1ov"),
+"fall": SubResource("Animation_pnxud"),
+"herido": SubResource("Animation_bwpem"),
+"jump": SubResource("Animation_k2f26"),
+"walk": SubResource("Animation_lfof0")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0kiv"]
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3p4s"]
+bg_color = Color(0.353726, 0.158577, 0.209203, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.474203, 0.120671, 0.124015, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+position = Vector2(-27, -4)
+collision_mask = 6
+script = ExtResource("1_lwe6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(228, 121)
+texture = ExtResource("1_y86qb")
+hframes = 11
+vframes = 4
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(229.5, 123.248)
+shape = SubResource("RectangleShape2D_hy108")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_j2dnk")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(30, 5)
+anchor_mode = 0
+script = ExtResource("3_7mydb")
+
+[node name="PlayerGUI" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlayerGUI"]
+offset_left = 5.0
+offset_top = 16.0
+offset_right = 64.0
+offset_bottom = 56.0
+
+[node name="FrutaLabel2" type="Label" parent="PlayerGUI/HBoxContainer"]
+layout_mode = 2
+text = "Frutas:"
+label_settings = ExtResource("4_lv6d6")
+
+[node name="FrutaLabel" type="Label" parent="PlayerGUI/HBoxContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_s0kiv")
+
+[node name="HPProgressBar" type="ProgressBar" parent="PlayerGUI"]
+offset_left = 38.0
+offset_top = 13.0
+offset_right = 157.0
+offset_bottom = 19.0
+theme_override_styles/background = SubResource("StyleBoxFlat_i3p4s")
+theme_override_styles/fill = ExtResource("5_2o8n6")
+max_value = 4.0
+value = 2.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="PlayerGUI/HPProgressBar"]
+layout_mode = 0
+offset_left = -29.0
+offset_top = -10.0
+offset_right = 11.0
+offset_bottom = 13.0
+text = "H.P"
+
+[node name="raycastdmg" type="Node2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="raycastdmg"]
+position = Vector2(223, 122)
+target_position = Vector2(0, 20)
+collision_mask = 2
+
+[node name="RayCast2D2" type="RayCast2D" parent="raycastdmg"]
+position = Vector2(229, 122)
+target_position = Vector2(0, 20)
+collision_mask = 2
+
+[node name="RayCast2D3" type="RayCast2D" parent="raycastdmg"]
+position = Vector2(235, 122)
+target_position = Vector2(0, 20)
+collision_mask = 2
+
+[node name="AudioSalto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_nxdym")
+
+[node name="AudioHerido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_n57hb")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

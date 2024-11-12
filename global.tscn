@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2lu7jwye0w7d"]
+
+[ext_resource type="Script" path="res://Global.gd" id="1_infn1"]
+[ext_resource type="AudioStream" uid="uid://di2p4xwb1340l" path="res://PinkmanData/Sounds/confirmation_002.ogg" id="2_42n6f"]
+
+[node name="Global" type="Node"]
+script = ExtResource("1_infn1")
+
+[node name="frutaSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_42n6f")
+pitch_scale = 1.43

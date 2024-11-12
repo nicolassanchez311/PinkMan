@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0y2fpxkmd0q5"]
+
+[ext_resource type="PackedScene" uid="uid://xmt3jd37idfa" path="res://personajes/personajes.tscn" id="1_70cji"]
+[ext_resource type="Script" path="res://personajes/enemigo_cerdito.gd" id="2_gbqsb"]
+[ext_resource type="Texture2D" uid="uid://qh4778c8molj" path="res://PinkmanData/Enemies/AngryPig/angryPig.png" id="3_qabi8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hwmcd"]
+size = Vector2(26.5, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1hqxn"]
+size = Vector2(32, 29)
+
+[node name="enemigo_cerdito" groups=["enemigos"] instance=ExtResource("1_70cji")]
+script = ExtResource("2_gbqsb")
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-2, 0)
+texture = ExtResource("3_qabi8")
+hframes = 9
+vframes = 6
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("RectangleShape2D_hwmcd")
+
+[node name="Raycasts" type="Node2D" parent="." index="3"]
+
+[node name="RayCastsuelo" type="RayCast2D" parent="Raycasts" index="0"]
+target_position = Vector2(0, 20)
+collision_mask = 4
+
+[node name="RayCastsmuro" type="RayCast2D" parent="Raycasts" index="1"]
+target_position = Vector2(-20, 0)
+collision_mask = 4
+
+[node name="Raytimer" type="Timer" parent="Raycasts" index="2"]
+one_shot = true
+
+[node name="raycastPlayerDetector" type="RayCast2D" parent="." index="4"]
+target_position = Vector2(-50, 0)
+
+[node name="dmgPlayer" type="Area2D" parent="." index="5"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dmgPlayer" index="0" groups=["enemigos"]]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_1hqxn")
+
+[connection signal="timeout" from="Raycasts/Raytimer" to="." method="_on_raytimer_timeout"]
+[connection signal="body_entered" from="dmgPlayer" to="." method="_on_dmg_player_body_entered"]
